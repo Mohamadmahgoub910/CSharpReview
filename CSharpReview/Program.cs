@@ -71,43 +71,52 @@
 
             #endregion Basics
             #region Task1 array get max distance between repeated elements
-            Console.WriteLine("Enter the size of the array:");
-            int size = Convert.ToInt32(Console.ReadLine());
-            int[] arr = new int[size];
-            Console.WriteLine("Enter the elements of the array:");
-            for (int i = 0; i < size; i++)
-            {
-                arr[i] = Convert.ToInt32(Console.ReadLine());
-            }
+            //Console.WriteLine("Enter the size of the array:");
+            //int size = Convert.ToInt32(Console.ReadLine());
+            //int[] arr = new int[size];
+            //Console.WriteLine("Enter the elements of the array:");
+            //for (int i = 0; i < size; i++)
+            //{
+            //    arr[i] = Convert.ToInt32(Console.ReadLine());
+            //}
             // Read array values 
-            for (int i = 0; i < size; i++)
-            {
-                Console.Write(arr[i] + " ");
-            }
+            //for (int i = 0; i < size; i++)
+            //{
+            //Console.Write(arr[i] + " ");
+            //}
 
             // find the distance between the repeated elements
-            int min = 0;
-            int max = arr.Length;
-            int distance = 0;
-            int maxDistance = 0;
-            int numberOfRepeats = 0;
-            for (int i=min; i<max; i++)
-            {
-                for (int j=i+1; j<max; j++)
-                {
-                    if (arr[i] == arr[j])
-                    {
-                        distance = (j-i)-1;
-                        if (distance > maxDistance)
-                        {
-                            maxDistance = distance;
-                            numberOfRepeats = arr[i];
-                        } 
-                    }
-                }
-            }
-            Console.WriteLine($"\nThe longest distance is {maxDistance} for number {numberOfRepeats}");
+            //int min = 0;
+            //int max = arr.Length;
+            //int distance = 0;
+            //int maxDistance = 0;
+            //int numberOfRepeats = 0;
+            //for (int i=min; i<max; i++)
+            //{
+            //    for (int j=i+1; j<max; j++)
+            //    {
+            //        if (arr[i] == arr[j])
+            //        {
+            //            distance = (j-i)-1;
+            //            if (distance > maxDistance)
+            //            {
+            //                maxDistance = distance;
+            //                numberOfRepeats = arr[i];
+            //            } 
+            //        }
+            //    }
+            //}
+            //Console.WriteLine($"\nThe longest distance is {maxDistance} for number {numberOfRepeats}");
             #endregion Task1
+            #region Task2 Reverse a sentance
+            //Console.WriteLine("Enter a Sentance..");
+            //string str = Console.ReadLine();
+            ////string strReserved = new string(str.Reverse().ToArray());
+            //string reversed = string.Join(" ", str.Split(' ').Reverse());
+            //Console.WriteLine($"String reveresd is {reversed}");
+
+
+            #endregion Task2
         }
 
     }
